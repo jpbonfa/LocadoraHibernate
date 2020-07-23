@@ -227,7 +227,7 @@ public class FilmeController {
             JOptionPaneUtil.erro(Mensagem.informeNomeFilme);
             return false;
         } else if (Valida.apenasLetras(this.viewFilme.getTfNome().getText())) {
-            JOptionPaneUtil.erro(Mensagem.nomeInvalido);
+            JOptionPaneUtil.erro(Mensagem.filmeInvalido);
             return false;
         }
 

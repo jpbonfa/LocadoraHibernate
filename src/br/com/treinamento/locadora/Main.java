@@ -1,4 +1,3 @@
-
 package br.com.treinamento.locadora;
 
 import br.com.treinamento.locadora.view.LoginView;
@@ -6,11 +5,12 @@ import br.com.treinamento.locadora.view.MenuView;
 
 /**
  * Classe responsável por iniciar o sistema
+ *
  * @author joaop
  * @since 07/07/2020
  */
 public class Main {
-    
+
     /**
      * @param args the command line arguments
      */
@@ -41,11 +41,10 @@ public class Main {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //new LoginView();
-                new MenuView();
-               
+                new LoginView();
+
             }
         });
     }
-    
+
 }
