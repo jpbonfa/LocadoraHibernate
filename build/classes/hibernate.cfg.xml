@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/locadora_hibernate?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+    
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+     
+        <mapping class="br.com.treinamento.locadora.model.Cidade"/>
+        <mapping class="br.com.treinamento.locadora.model.Cliente"/>
+        <mapping class="br.com.treinamento.locadora.model.Contato"/>
+        <mapping class="br.com.treinamento.locadora.model.Endereco"/>
+        <mapping class="br.com.treinamento.locadora.model.Estado"/>
+        <mapping class="br.com.treinamento.locadora.model.Filme"/>
+        <mapping class="br.com.treinamento.locadora.model.FilmeGenero"/>
+        <mapping class="br.com.treinamento.locadora.model.Genero"/>
+        <mapping class="br.com.treinamento.locadora.model.ItemLocacao"/>
+        <mapping class="br.com.treinamento.locadora.model.Locacao"/>
+        <mapping class="br.com.treinamento.locadora.model.Vendedor"/>
+        <mapping class="br.com.treinamento.locadora.model.Usuario"/>
+    
+    </session-factory>
+</hibernate-configuration>
